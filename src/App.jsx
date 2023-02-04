@@ -77,7 +77,7 @@ function App() {
               )
             }
           />
-          <Route path="/" element={<Home setLinkData={setLinkData} />} />
+          <Route path="react-marvel-api/" element={<Home setLinkData={setLinkData} />} />
           <Route
             path="characters"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}

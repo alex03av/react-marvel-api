@@ -156,17 +156,7 @@ function Navigation({ rutesHeros, setLinkData, linkData, supers, long }) {
           )}
         </div>
         <div className="copyright">
-          <a
-            href="https://www.linkedin.com/in/alexander-araujo-03840a258"
-            target="_blank"
-          >
-            <img
-              className="imgmarverl"
-              src="src/img/pool.png"
-              alt="DeadPoosl"
-            />{" "}
-          </a>
-
+        
           <div className="copidata">
             <span>©copyright: 2023 MARVEL</span>
             <a href="http://marvel.com\" target="_blank">
