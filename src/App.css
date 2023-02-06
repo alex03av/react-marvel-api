@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
 }
 .home {
   display: block;
-  margin: 5vw auto 10vh auto;
+  margin: 100px auto;
   width: 50%;
 
   background-color: #00000048;
@@ -64,8 +64,8 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   grid-gap: 4vw;
-  width: 70%;
-  margin: 70px auto 0 auto;
+  width: 80%;
+  margin: auto;
   padding: 60px 0;
 }
 .containerHeros img {
@@ -130,14 +130,21 @@ span {
 .posted {
   background-color: #198519;
 }
-
-.nav-container {
-  background-color: #d72323;
-  width: 100%;
+.Principal{
+  display: block;
+  margin-bottom: 80px;
+  background-color: #000000;
+}
+.nav-container { width: 100%;
 
   position: fixed;
   z-index: 1;
-  top: -0%;
+  top: 0%;
+  right: 0%;
+  display: block;
+  margin-bottom: 400vh;
+  background-color: #d72323;
+ 
 }
 .nav-container header {
   display: flex;
@@ -153,13 +160,13 @@ span {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .spidy {
-  width: 4%;
+  width: 10%;
   padding: 5px 0;
 }
 .personaje {
   background-color: #00000048;
   width: 50%;
-  margin: 90px auto 0 auto;
+  margin:5vw  auto;
   color: #eeeeee;
   overflow: hidden;
 }
@@ -240,21 +247,16 @@ h4 {
 input,
 .resul {
   width: 70%;
-  font-size: 1vw;
+  font-size: 17px;
 
-  padding: 0.3vw;
+  padding: 0.5vw 0 0.2vw 0.2vw;
+  border-radius: 10px;
   border-bottom: 1px solid #eeeeeeb6;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: #161c22;
   margin-right: 0.5vw;
   color: #508bc7;
-  padding-top: 0.9vw;
 }
-.resul {
-  position: fixed;
-  top: 7%;
-  right: 0;
-  width: 21%;
-}
+
 input::placeholder {
   color: #ffffffa6;
   padding: 5px;
@@ -262,9 +264,10 @@ input::placeholder {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .Container___form button {
-  background-color: #d72323;
+  width: 25%;
+  background-color: #161c22;
   border-radius: 7px;
-  font-size: 16px;
+  font-size: 15px;
   padding: 0.5vw 1vw;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border-radius: 10px;
@@ -280,25 +283,25 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 800px) {
+  .Principal{
+    margin-bottom: 16vw;
+  }
   .home {
     display: flex;
     width: 85%;
-    padding: 0 5px;
     flex-direction: column;
     background-color: #00000048;
-    margin-top: 25vw;
   }
   .home p {
     font-size: 16px;
     padding: 0 5px;
   }
   .home h1 {
-    font-size: 3vh;
-    padding: 17px 0;
+    font-size: 25px;
   }
   .personaje {
     width: 80%;
-    margin-top: 30vw;
+    margin-top: 35vw;
   }
   .personaje .caratula p {
     width: 90%;
@@ -315,7 +318,8 @@ input::placeholder {
     justify-content: center;
     flex-wrap: wrap;
     grid-gap: 4vw;
-    width: 90%;
+    width: 95%;
+    margin-top: 20vw;
   }
   .containerHeros img {
     height: 130px;
@@ -340,10 +344,11 @@ input::placeholder {
   }
 
   .nav-container header {
-    width: 65%;
+    width: 100%;
     font-size: 20px;
     display: flex;
     padding-top: 10px;
+    justify-content: center;
   }
 
   .Container___form {
@@ -376,10 +381,14 @@ input::placeholder {
   }
 }
 .resul {
-  background-color: #d723239d;
+  background-color: #d72323c4;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #dfdade;
   border: none;
+  position: fixed;
+  top: 8%;
+  right: 30px;
+  width: 21%;
 }
 a,
 .navList {
@@ -433,7 +442,7 @@ a,
 .OneComics {
   background-color: #00000048;
   color: #eeeeee;
-  margin: 100px auto 20px auto;
+  margin: auto;
 
   display: grid;
   grid-template-areas:
@@ -459,6 +468,7 @@ a,
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 25px;
+  margin-top: 5vw;
 }
 .HeaderComics h2 {
   width: 100%;
@@ -504,6 +514,13 @@ a,
     font-size: 2vw;
     padding: 5px;
   }
+  .resul {
+    position: relative;
+    top: -5%;
+    right: 6%;
+    width: 48%;
+    background-color: #161c226e;
+  }
   .OneComics {
     width: 90%;
     margin: 120px auto 20px auto;
@@ -533,7 +550,7 @@ a,
   }
   .navList span a {
     font-size: 14px;
-    margin-right: 5px;
+    margin-right:2.5px;
   }
 }
 .carga {
@@ -723,7 +740,8 @@ a,
 
 @media (max-width: 600px) {
   .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
+  .footer-distributed .footer-right,
+  .footer-distributed span {
     text-align: center;
   }
   .footer-distributed .footer-right {

@@ -77,12 +77,12 @@ function OneHeros({ supers, IDP }) {
             </div>
           </div>
           <span className="otros">
-            <Link to={`/characters`}>VOLVER</Link>
+            <Link to={`/react-marvel-api/characters`}>VOLVER</Link>
           </span>
         </div>
       ) : (
         <span>
-          <Link to="/panel">VOLVER</Link>
+          <Link to="/react-marvel-api">VOLVER</Link>
         </span>
       )}
     </>

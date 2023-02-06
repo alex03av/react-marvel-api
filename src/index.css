@@ -9,8 +9,7 @@
   height: 90vh;
   width: 100%;
   position: relative;
-  margin-top: 80px;
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 svg {

@@ -1,14 +1,6 @@
-import { useEffect } from "react";
-import { Link ,useLocation} from "react-router-dom";
-import ERRORPAGE from './ERRORPAGE'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Heros({ supers, rutesHeros}) {
-
-  const sampleLocation = useLocation();
- 
- 
-  
+function Heros({ supers, rutesHeros }) {
   return (
     <div className="containerHeros">
       {" "}
@@ -54,14 +46,9 @@ function Heros({ supers, rutesHeros}) {
               </div>
             );
           })
-        : <h1>sexo</h1>}
+        : ""}
     </div>
   );
 }
 
-export default Heros; /*
- <BrowserRouter>
-                  <Routes>
-                    <Route path={'/pages'+imgenes.name} element={<h1>inicio</h1>} />
-                  </Routes>
-                </BrowserRouter>*/
+export default Heros;

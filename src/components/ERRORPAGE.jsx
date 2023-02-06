@@ -17,7 +17,7 @@ function ERRORPAGE({ valor }) {
             <span>Oops, it looks like an error has occurred.</span>
 
             <span className="otross">
-              <Link to="/">Home</Link>
+              <Link to="/react-marvel-api/">Home</Link>
             </span>
           </section>
         )}

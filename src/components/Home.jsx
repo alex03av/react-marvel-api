@@ -13,7 +13,7 @@ function Home({ setLinkData }) {
         de las editoriales profesionales más grandes de la industria del cómic
         en América del Norte. Marvel Comics ahora es parte de Disney, habiendo
         adquirido la compañía no hace mucho tiempo, creando algunos de los
-        personajes más queridos de la industria sexo. Se remonta a 1939 cuando la
+        personajes más queridos de la industria. Se remonta a 1939 cuando la
         empresa era conocida como Timely Publications. En las primeras décadas
         tuvo diferentes nombres.
       </p>

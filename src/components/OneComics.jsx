@@ -27,7 +27,7 @@ function OneComics({ supers, IDP, linkData }) {
               src={
                 select.thumbnail !== null
                   ? select.thumbnail.path + "." + select.thumbnail.extension
-                  : `/src/img/no marvel.jpg`
+                  : `\src\img\no marvel.jpg`
               }
               alt=""
             />
@@ -174,13 +174,11 @@ function OneComics({ supers, IDP, linkData }) {
           </div>
 
           <span className="otros">
-            <Link to={`/${linkData}`}>VOLVER</Link>
+            <Link to={`/react-marvel-api/${linkData}`}>VOLVER</Link>
           </span>
         </div>
       ) : (
-        <span>
-          <Link to="/panel">VOLVER</Link>
-        </span>
+     ''
       )}
     </>
   );

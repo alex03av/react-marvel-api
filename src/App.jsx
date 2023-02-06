@@ -9,7 +9,7 @@ import OneComics from "./components/OneComics";
 import Home from "./components/Home";
 import ERRORPAGE from "./components/ERRORPAGE";
 import Cargando from "./components/Cargando";
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 function App() {
   const [supers, setSupers] = useState([]);
   const [rutesheros, setRutesheros] = useState(null);
@@ -51,7 +51,7 @@ function App() {
 
         <Routes>
           <Route
-            path={linkData + "/" + rutesheros}
+            path={"react-marvel-api/" + linkData + "/" + rutesheros}
             element={
               linkData !== "characters" ? (
                 <OneComics
@@ -65,7 +65,7 @@ function App() {
             }
           />
           <Route
-            path={linkData + "/" + rutesheros + "/search"}
+            path={"react-marvel-api/" + linkData + "/" + rutesheros + "/search"}
             element={
               linkData !== "characters" ? (
                 <OneComics
@@ -78,34 +78,37 @@ function App() {
               )
             }
           />
-          <Route path="/" element={<Home setLinkData={setLinkData} />} />
           <Route
-            path="characters"
+            path="react-marvel-api/"
+            element={<Home setLinkData={setLinkData} />}
+          />
+          <Route
+            path="react-marvel-api/characters"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}
           />
           <Route
-            path="series"
+            path="react-marvel-api/series"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}
           />
           <Route
-            path="comics"
+            path="react-marvel-api/comics"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}
           />
           <Route
-            path="creators"
+            path="react-marvel-api/creators"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}
           />
           <Route
-            path="events"
+            path="react-marvel-api/events"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}
           />{" "}
           <Route
-            path="stories"
+            path="react-marvel-api/stories"
             element={<Heros supers={supers} rutesHeros={setRutesheros} />}
           />
           <Route path="*" element={<ERRORPAGE valor={superBusqueda} />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
