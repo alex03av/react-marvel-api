@@ -28,7 +28,6 @@ body::-webkit-scrollbar-thumb {
   display: block;
   margin: 100px auto;
   width: 50%;
-
 }
 .home img {
   display: block;
@@ -128,12 +127,13 @@ span {
 .posted {
   background-color: #198519;
 }
-.Principal{
+.Principal {
   display: block;
   margin-bottom: 80px;
   background-color: #000000;
 }
-.nav-container { width: 100%;
+.nav-container {
+  width: 100%;
 
   position: fixed;
   z-index: 1;
@@ -142,7 +142,6 @@ span {
   display: block;
   margin-bottom: 400vh;
   background-color: #d72323;
- 
 }
 .nav-container header {
   display: flex;
@@ -164,7 +163,7 @@ span {
 .personaje {
   background-color: #00000048;
   width: 50%;
-  margin:5vw  auto;
+  margin: 5vw auto;
   color: #eeeeee;
   overflow: hidden;
 }
@@ -280,7 +279,7 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 800px) {
-  .Principal{
+  .Principal {
     margin-bottom: 16vw;
   }
   .home {
@@ -441,7 +440,7 @@ a,
   background-color: #00000048;
   color: #eeeeee;
   margin: auto;
-
+  margin-bottom: 5vw;
   display: grid;
   grid-template-areas:
     "HeaderComics HeaderComics HeaderComics"
@@ -471,7 +470,7 @@ a,
   width: 100%;
   text-align: center;
   font-weight: 900;
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 24px 20px;
   margin-bottom: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -546,7 +545,7 @@ a,
   }
   .navList span a {
     font-size: 14px;
-    margin-right:2.5px;
+    margin-right: 2.5px;
   }
 }
 .carga {
