@@ -69,9 +69,10 @@ function Navigation({ rutesHeros, setLinkData, linkData, supers, long }) {
       <div className="nav-container">
         <div className="nav">
           <header>MARVEL {linkData.toUpperCase()}</header>{" "}
+          <img className="spidy" src="src\img\spider.png" alt="" />
           <div className="navList">
             <span>
-              <Link onClick={() => DataLink("")} to="/">
+              <Link onClick={() => DataLink("")} to="react-marvel-api/">
                 Home
               </Link>{" "}
             </span>
@@ -152,21 +153,19 @@ function Navigation({ rutesHeros, setLinkData, linkData, supers, long }) {
               {}
             </div>
           ) : (
-            ""
+            <div className="Container___form"></div>
           )}
         </div>
-        <div className="copyright">
-        
-          <div className="copidata">
-            <span>©copyright: 2023 MARVEL</span>
-            <a href="http://marvel.com\" target="_blank">
-              Data provided by Marvel. © 2023 MARVEL
-            </a>
-          </div>
-        </div>
+        <div className="copyright"></div>
       </div>
     </>
   );
 }
 
 export default Navigation;
+/** <div className="copidata">
+            <span>©copyright: 2023 MARVEL</span>
+            <a href="http://marvel.com\" target="_blank">
+              Data provided by Marvel. © 2023 MARVEL
+            </a>
+          </div> */

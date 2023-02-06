@@ -9,6 +9,7 @@ import OneComics from "./components/OneComics";
 import Home from "./components/Home";
 import ERRORPAGE from "./components/ERRORPAGE";
 import Cargando from "./components/Cargando";
+import Footer from './components/Footer'
 function App() {
   const [supers, setSupers] = useState([]);
   const [rutesheros, setRutesheros] = useState(null);
@@ -104,6 +105,7 @@ function App() {
           />
           <Route path="*" element={<ERRORPAGE valor={superBusqueda} />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
