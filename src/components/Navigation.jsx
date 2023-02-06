@@ -72,7 +72,7 @@ function Navigation({ rutesHeros, setLinkData, linkData, supers, long }) {
           <img className="spidy" src="src\img\spider.png" alt="" />
           <div className="navList">
             <span>
-              <Link onClick={() => DataLink("")} to="react-marvel-api/">
+              <Link onClick={() => DataLink("")} to="/">
                 Home
               </Link>{" "}
             </span>
