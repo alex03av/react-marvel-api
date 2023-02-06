@@ -409,7 +409,8 @@ a,
   margin: 1vh 0.5vw;
 }
 .navList span a:hover {
-  color: #d72323;
+  color: #12151a;
+  font-weight: 900;
 }
 
 .copyright {

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import nomarvel from "../img/no marvel.jpg";
 
 function Heros({ supers, rutesHeros }) {
   return (
@@ -18,7 +19,7 @@ function Heros({ supers, rutesHeros }) {
                         ? imgenes.thumbnail.path +
                           "." +
                           imgenes.thumbnail.extension
-                        : `/src/img/no marvel.jpg`
+                        : nomarvel
                     }
                     alt=""
                   />
