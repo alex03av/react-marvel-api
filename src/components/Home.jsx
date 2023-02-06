@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-
+import marvel from '../img/marvelimg.png'
+import marvel2 from '../img/marveles.png'
 function Home({ setLinkData }) {
   useEffect(() => {
     setLinkData("");
@@ -17,7 +18,7 @@ function Home({ setLinkData }) {
         empresa era conocida como Timely Publications. En las primeras décadas
         tuvo diferentes nombres.
       </p>
-      <img src="src\img\marvelimg.png" alt="" />
+      <img src={marvel} alt="" />
       <p>
         Por ejemplo, en la década de 1950 se llamaba Atlas Comics. Estos años no
         fueron particularmente exitosos para el editor y, a pesar de sus
@@ -36,7 +37,7 @@ function Home({ setLinkData }) {
         ganado millones de dólares con todos sus personajes de dibujos animados,
         pero no siempre fue así. Quebraron en los 90...
       </p>
-      <img src="src\img\marveles.png" alt="" />
+      <img src={marvel2} alt="" />
       <p>
         Marvel Comics nació en 1939 como una editorial de cómics de superhéroes,
         fundada por Martin Goodman, que entonces tenía 31 años. Al principio era

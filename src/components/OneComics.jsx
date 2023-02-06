@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import nomarvel from '../img/no marvel.jpg'
 function OneComics({ supers, IDP, linkData }) {
   const [select, setSelect] = useState([]);
   const IdKey = () => Math.floor(Math.random() * 100);
@@ -27,7 +28,7 @@ function OneComics({ supers, IDP, linkData }) {
               src={
                 select.thumbnail !== null
                   ? select.thumbnail.path + "." + select.thumbnail.extension
-                  : `\src\img\no marvel.jpg`
+                  : nomarvel
               }
               alt=""
             />

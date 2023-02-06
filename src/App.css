@@ -29,7 +29,6 @@ body::-webkit-scrollbar-thumb {
   margin: 100px auto;
   width: 50%;
 
-  background-color: #00000048;
 }
 .home img {
   display: block;
@@ -52,7 +51,6 @@ body::-webkit-scrollbar-thumb {
   color: #dfdade;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px 5px;
-  background-color: #d72323;
   margin-bottom: 1vw;
 }
 a {
@@ -183,7 +181,6 @@ span {
   color: #eeeeee;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
     Arial, sans-serif;
-  background-color: #d72323;
 }
 .not {
   display: block;
@@ -288,9 +285,9 @@ input::placeholder {
   }
   .home {
     display: flex;
-    width: 85%;
+    width: 100%;
+    padding: 8px;
     flex-direction: column;
-    background-color: #00000048;
   }
   .home p {
     font-size: 16px;
@@ -300,8 +297,8 @@ input::placeholder {
     font-size: 25px;
   }
   .personaje {
-    width: 80%;
-    margin-top: 35vw;
+    width: 100%;
+    margin-top: 32vw;
   }
   .personaje .caratula p {
     width: 90%;
@@ -317,8 +314,8 @@ input::placeholder {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    grid-gap: 4vw;
-    width: 95%;
+    grid-gap: 3vw;
+    width: 100%;
     margin-top: 20vw;
   }
   .containerHeros img {
@@ -468,7 +465,6 @@ a,
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 25px;
-  margin-top: 5vw;
 }
 .HeaderComics h2 {
   width: 100%;
@@ -480,7 +476,6 @@ a,
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #dfdade;
   font-weight: 800;
-  background-color: #d72323;
 }
 
 .OneComics p {
@@ -522,8 +517,8 @@ a,
     background-color: #161c226e;
   }
   .OneComics {
-    width: 90%;
-    margin: 120px auto 20px auto;
+    width: 100%;
+    margin: 32vw auto 20px auto;
     grid-template-areas:
       "HeaderComics "
       "detalles"

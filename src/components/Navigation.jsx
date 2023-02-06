@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import arania from '../img/spider.png'
 function Navigation({ rutesHeros, setLinkData, linkData, supers }) {
   const sampleLocation = useLocation();
   const [superHeros, setSuperHeros] = useState("");
@@ -51,7 +52,6 @@ function Navigation({ rutesHeros, setLinkData, linkData, supers }) {
         .then((res) => res.json())
         .then((res) => {
           setParams(res.data.results[0].total !== 0 ? res : "");
-console.log(res)
           supers(res);
           !params.data.results[0].total !== 0 ? rutesHeros(null) : "";
           console.clear();
@@ -69,7 +69,7 @@ console.log(res)
           <div className="nav">
             <header>
               MARVEL {linkData.toUpperCase()}
-              <img className="spidy" src="src\img\spider.png" alt="" />
+              <img className="spidy" src={arania} alt="" />
             </header>{" "}
             <div className="navList">
               <span>
